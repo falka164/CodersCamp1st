@@ -6,13 +6,21 @@
     --bg: #222222;/*gray*/
 }
 
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
 #header
 {
 	width: auto;
 	height: 500px;
+	display: flex;
 	font-family: 'Open Sans', sans-serif;
 	background-color: var(--bg);
 	font-size: 300%;
+	
 }
 
 .mainTitle 
@@ -20,31 +28,42 @@
 	float: left;
 	width: 50%;
 	color: var(--alt-font);
-	padding 20px;
+	padding: 20px;
 	text-align: center;
+	font-weight: bold;
+	justify-content: center;
 }
 
 #header img
 {
-	float: left;
-	width: 50%;
+	width: 100%;
 	height: 500px;
+	justify-content: cover;
 }
+
+.autumn
+{
+	width: 50%;
+	justify-content: cover;
 
 #description
 {
-	clear: both;
-	width: auto;
+	width: 100%;
+	height: 600px;
 	font-family: 'Open Sans', sans-serif;
-}
-
-#description img
-{
-	width: auto;
-	height: auto;
+	background-color: var(--alt-font);
+	background-image url(./jpg/background.svg);
 }
 
 .about
 {
 	text-transform: uppercase;
+	color: var(--alt-font);
+	font-weight: bold;
+	font-size: 150%;
 }	
+
+.text
+{
+	color: white;
+}
