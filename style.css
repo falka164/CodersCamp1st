@@ -45,6 +45,7 @@ body
 {
 	width: 50%;
 	justify-content: cover;
+}
 
 #description
 {
@@ -52,7 +53,18 @@ body
 	height: 600px;
 	font-family: 'Open Sans', sans-serif;
 	background-color: var(--alt-font);
-	background-image url(./jpg/background.svg);
+	background-image: url(./jpg/stripes.png);
+	padding: 60px;
+}
+
+.aboutHeadline
+{
+	justify-content: center;
+	width: 70%;
+	height: 40%;
+	padding: 20px;
+	background-color: var(--bg);
+	
 }
 
 .about
