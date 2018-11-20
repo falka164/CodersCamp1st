@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto',
+        sans-serif;
+    /* konflikt czcionki i rozmiaru....*/
+    font-size: 24px;
 }
 
 :root {
@@ -16,15 +19,17 @@
     /*black*/
     --bg: #222222;
     /*gray*/
-    --border-color: #333;
 }
 
-html {
-    font-family: 'Roboto',
-        sans-serif;
-    font-size: 24px;
-    color: var(--main-font);
+body {
+    background-color: var(--main-bg);
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    width: 100%;
+
 }
+
 
 /* header */
 
@@ -34,7 +39,9 @@ header {
     flex-direction: column;
 
     /* ... */
+    box-sizing: border-box;
     height: 100vh;
+    color: var(--main-font);
 }
 
 /* navbar mobile */
@@ -51,11 +58,12 @@ header .navMobile .image {
     top: 50%;
     left: 7%;
     transform: translateY(-50%);
-    /* margin: auto 50px; */
 }
 
 header .navMobile .image img {
-    height: 25px;
+    width: 250px;
+    /* height: 25px; */
+
 }
 
 header .navMobile i {
@@ -70,7 +78,8 @@ header .navMobile i {
 /* 320x533 */
 @media (min-width:320px) {
     header .navMobile .image img {
-        height: 20px;
+        /* height: 20px; */
+        width: 200px;
     }
 
     header .navMobile i {
@@ -89,7 +98,8 @@ header .navMobile i {
 /* 414x736 */
 @media (min-width: 414px) {
     header .navMobile .image img {
-        height: 28px;
+        /* height: 28px; */
+        width: 300px;
     }
 
     header .navMobile i {
@@ -105,7 +115,8 @@ header .navMobile i {
     }
 
     header .navMobile .image img {
-        height: 32px;
+        /* height: 32px; */
+        width: 320px;
     }
 
     header .navMobile i {
@@ -119,7 +130,9 @@ header .navMobile i {
 /* 320x533 */
 @media (orientation: landscape) and (min-width: 533px) {
     header .navMobile .image img {
-        height: 18px;
+        /* height: 18px; */
+        width: 200px;
+
     }
 
     header .navMobile i {
@@ -131,7 +144,8 @@ header .navMobile i {
 /* 320x568 */
 @media (orientation: landscape) and (min-width: 568px) {
     header .navMobile .image img {
-        height: 15px;
+        /* height: 15px; */
+        width: 180px;
     }
 
     header .navMobile i {
@@ -143,7 +157,8 @@ header .navMobile i {
 /* 375x667 */
 @media (orientation: landscape) and (min-width: 667px) {
     header .navMobile .image img {
-        height: 20px;
+        /* height: 20px; */
+        width: 180px;
     }
 
     header .navMobile i {
@@ -165,7 +180,7 @@ header .navMobile i {
 }
 
 /* 375x812 */
-@media (orientation: landscape) and (max-width: 812px) {
+/* @media (orientation: landscape) and (max-width: 812px) {
     header .navMobile .image img {
         height: 20px;
     }
@@ -174,7 +189,7 @@ header .navMobile i {
         top: calc(50% - 12px);
         font-size: 1rem;
     }
-}
+} */
 
 /* navbar mobile bars */
 .bar {
@@ -263,11 +278,132 @@ header .nav .bigScreen li:nth-last-child(3) {
 }
 
 
-
-
-
-header .sentence {
-    flex: 0 1 88vh;
-
-    background-color: #333;
+#our {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--alt-font);
+    font-size: 2em;
+    padding-bottom: 2%;
 }
+
+#team {
+    height: auto;
+    width: 100%;
+    background-color: var(--main-bg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-align: center;
+}
+
+p {
+    content-direction: row;
+}
+
+#team p,
+h3 {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+img {
+    height: auto;
+    width: 100%;
+
+}
+
+.member:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+
+}
+
+.member {
+    width: 25%;
+    height: auto;
+    background-color: var(--bg);
+    display: block;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    color: var(--main-font);
+    font-size: 1em;
+    text-align: center;
+    transition: transform 300ms ease-in-out;
+}
+
+.memberlink {
+    color: white;
+    font-size: 1em;
+    background-color: var(--alt-font);
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    width: 35%;
+    height: 45%;
+    margin-left: 32.5%;
+    margin-bottom: 20%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+.memberlink:hover {
+    background-color: #dd3000;
+}
+
+div h3:first-child,
+h3:nth-child(2) {
+    text-transform: uppercase;
+    color: var(--alt-font);
+}
+
+
+
+
+@media only screen and (max-width:320px) {
+    #team {
+        flex-wrap: wrap;
+
+    }
+
+    body {
+        font-size: 8px;
+    }
+
+    .member {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:640px) {
+    #team {
+        flex-wrap: wrap;
+
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .member {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width:1240px) {
+    #team {
+        flex-wrap: wrap;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .member {
+        width: 40%;
+    }
+}
+
+>>>>>>>2d8f7374a28862848f68c7423cebf7f5468da30b
