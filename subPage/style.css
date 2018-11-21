@@ -1,0 +1,182 @@
+:root {
+    --mainTextColor: #fd7c2e;
+    --descriptionTextColor: #f9f9f9;
+
+
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.subPageContainer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#introduce {
+    color: var(--mainTextColor);
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.photo {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo > img {
+    width: 100%;
+    height: auto;
+    padding: 10%;
+
+}
+
+.personInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10% 10% 10% 10%;
+}
+
+h1, h3 {
+    display: flex;
+
+    align-items: center;
+    padding: 5% 0 0;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.descriptionPerson {
+    text-align: center;
+    line-height: 1.7em;
+    color: var(--descriptionTextColor);
+}
+
+.commonButton {
+    background: #fd7c2e;
+    border: none;
+    color: white;
+    padding: 3% 5%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 10%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.commonButton:hover {
+    border: 1px solid var(--mainTextColor);
+    background-color: transparent;
+    color: var(--mainTextColor);
+}
+
+#projects {
+    color: var(--mainTextColor);
+    background-color: #181818;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projectItems {
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 3em;
+}
+
+.projectItem {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin: 1%;
+    width: 25%;
+
+}
+
+.description {
+    line-height: 1.7em;
+    color: var(--descriptionTextColor);
+}
+
+.specialButton {
+    border-radius: 2em;
+    padding: 3% 5%;
+    border: 1px solid var(--mainTextColor);
+    background-color: transparent;
+    font-size: 1em;
+    color: var(--mainTextColor);
+    text-transform: capitalize;
+    text-align: center;
+    width: 33%;
+    margin: 15% 0 15%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.specialButton:hover {
+    background-color: #fd7c2e;
+    color: #181818;
+}
+footer {
+    height: 100%;
+    background-color: #181818;
+}
+@media (max-width: 620px) {
+    #introduce {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .personInfo {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .subPageContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projectItems {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .projectItem {
+        width: 100%;
+    }
+    .textItems {
+        line-height: 1em;
+    }
+    .specialButton {
+        margin: 5% auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    .photo {
+        width: 100%;
+    }
+}
