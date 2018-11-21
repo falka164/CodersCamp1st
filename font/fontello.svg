@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="link" unicode="&#xe800;" d="M294 116q14 14 34 14t36-14q32-34 0-70l-42-40q-56-56-132-56-78 0-134 56t-56 132q0 78 56 134l148 148q70 68 144 77t128-43q16-16 16-36t-16-36q-36-32-70 0-50 48-132-34l-148-146q-26-26-26-64t26-62q26-26 63-26t63 26z m450 574q56-56 56-132 0-78-56-134l-158-158q-74-72-150-72-62 0-112 50-14 14-14 34t14 36q14 14 35 14t35-14q50-48 122 24l158 156q28 28 28 64 0 38-28 62-24 26-56 31t-60-21l-50-50q-16-14-36-14t-34 14q-34 34 0 70l50 50q54 54 127 51t129-61z" horiz-adv-x="800" />
+
+<glyph glyph-name="facebook" unicode="&#xf09a;" d="M535 843v-147h-87q-48 0-65-20t-17-60v-106h164l-22-165h-142v-424h-171v424h-142v165h142v122q0 104 58 161t155 57q82 0 127-7z" horiz-adv-x="571.4" />
+
+<glyph glyph-name="linkedin" unicode="&#xf0e1;" d="M195 501v-553h-184v553h184z m12 171q0-41-29-68t-75-27h-1q-46 0-74 27t-28 68q0 41 29 68t75 27 74-27 29-68z m650-407v-317h-183v296q0 59-23 92t-71 33q-35 0-58-19t-36-48q-6-17-6-45v-309h-184q1 223 1 361t0 165l-1 27h184v-80h-1q11 18 23 31t31 29 49 24 64 9q95 0 153-63t58-186z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="copyright" unicode="&#xf1f9;" d="M642 251v-61q0-28-21-50t-52-34-66-18-65-6q-115 0-192 78t-76 193q0 113 76 189t189 76q19 0 42-3t52-10 51-19 39-31 16-45v-61q0-9-9-9h-66q-9 0-9 9v39q0 24-37 38t-76 13q-79 0-128-51t-49-132q0-85 51-140t130-55q38 0 77 14t39 37v39q0 4 3 6t5 3h67q3 0 6-3t3-6z m-213 456q-73 0-139-28t-114-76-76-114-29-139 29-139 76-113 114-77 139-28 138 28 114 77 76 113 29 139-29 139-76 114-114 76-138 28z m428-357q0-117-57-215t-156-156-215-58-216 58-155 156-58 215 58 215 155 156 216 58 215-58 156-156 57-215z" horiz-adv-x="857.1" />
+</font>
+</defs>
+</svg>
